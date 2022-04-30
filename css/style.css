@@ -8,6 +8,10 @@ h1#site-title {
     font-family: 'Zhi Mang Xing', cursive;
 } */
 
+@font-face {
+  font-family: 'ZhuZiAYuanJWD';
+  src: url('/fonts/ZhuZiAYuanJWD.ttf');
+}
 @font-face{
   font-family:'Cartoon' ;  /* 字体名自定义即可 */
   src:url('/fonts/Cartoon.ttf'); /* 字体文件路径 */

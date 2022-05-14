@@ -6,7 +6,7 @@
   <link href="https://www.markyin.cn/atom.xml" rel="self"/>
   
   <link href="https://www.markyin.cn/"/>
-  <updated>2022-05-01T13:45:20.450Z</updated>
+  <updated>2022-05-14T04:10:23.132Z</updated>
   <id>https://www.markyin.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简单理解HTTP和HTTPS的区别</title>
+    <link href="https://www.markyin.cn/article/4cf0680e.html"/>
+    <id>https://www.markyin.cn/article/4cf0680e.html</id>
+    <published>2022-05-14T04:02:48.979Z</published>
+    <updated>2022-05-14T04:10:23.132Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简单理解HTTP和HTTPS的区别"><a href="#简单理解HTTP和HTTPS的区别" class="headerlink" title="简单理解HTTP和HTTPS的区别"></a>简单理解HTTP和HTTPS的区别</h2><h3 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h3><p>HTTP：超文本传输协议，是一种用于分布式、协作式和超媒体信息系统的应用层协议。 简单来说就是一种发布和接收 HTML 页面的方法，被用于在 Web 浏览器和网站服务器之间传递信息。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用一句话来说就是HTTP是一种传输协议</span><br></pre></td></tr></table></figure><p>HTTPS：超文本传输安全协议，是一种透过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，但利用 SSL&#x2F;TLS 来加密数据包。HTTPS 开发的主要目的，是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简单来说就是：HTTPS协议=HTTP协议+SSL协议/TSL协议</span><br></pre></td></tr></table></figure><h3 id="二、区别"><a href="#二、区别" class="headerlink" title="二、区别"></a>二、区别</h3><ol><li><p>HTTP 明文传输，数据都是未加密的，安全性较差，HTTPS（SSL+HTTP） 数据传输过程是加密的，安全性较好。</p></li><li><p>使用 HTTPS 协议需要到 CA（Certificate Authority，数字证书认证机构） 申请证书，一般免费证书较少，因而需要一定费用。证书颁发机构如：Symantec、Comodo、GoDaddy 和 GlobalSign 等。</p></li><li><p>HTTP 页面响应速度比 HTTPS 快，主要是因为 HTTP 使用 TCP 三次握手建立连接，客户端和服务器需要交换 3 个包，而 HTTPS除了 TCP 的三个包，还要加上 TSL 握手需要的 9 个包，所以一共是 12 个包。</p></li><li><p>http 和 https 使用的是完全不同的连接方式，用的端口也不一样，前者是 80，后者是 443。</p></li><li><p>HTTPS 其实就是建构在 SSL&#x2F;TLS 之上的 HTTP 协议，所以，要比较 HTTPS 比 HTTP 要更耗费服务器资源。</p></li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">简单的说:</span><br><span class="line">HTTP是明文传输，黑客可以知道你和服务器之间的内容</span><br><span class="line">HTTPS是HTTP经过TSL加密后进行的加密传输，黑客无法获取你和服务器之间的内容</span><br></pre></td></tr></table></figure><h3 id="三、SSL-TSL加密"><a href="#三、SSL-TSL加密" class="headerlink" title="三、SSL\TSL加密"></a>三、SSL\TSL加密</h3><p>目前SSL已经不用了，现在几乎所有的浏览器都是使用的TSL加密。该加密过程可以通过一张图片来解释</p><ol><li>客户端发送Client Hello、支持的TLS版本、支持的加密套件（不同的对称加密算法组合）、第一个随机数</li><li>服务端单发送Server Hello、确认支持的TLS版本、确认选择的加密套件、第二个随机数</li><li>服务端发送CA证书（浏览器会对照自己的证书信任列表来确认这个服务器是否可信）、服务器公钥、Server Hello Done（服务端发送完了）。这里服务器也可能发出请求要客户端证书和公钥，比如登录网站的时候</li><li>客户端发送预主密钥（经过公钥加密后的第三个随机数）、Change Ciper Spec（往后的数据通过商量好的算法加密）、Encrypted Hadshake Message（TLS协商没有问题，加密开始）</li><li>服务端发送Encrypted Hadshake Message</li></ol><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202205141156250.png" alt="image-20220514115623699"></p><p><a href="https://www.bilibili.com/video/BV1KY411x7Jp">图片来源于技术蛋老师</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">总而言之产生的三个随机数最终可以获得一个会话密钥，即后续用到的对称加密方法。</span><br></pre></td></tr></table></figure><h3 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h3><p>如今HTTPS已成为主流，但是HTTPS中的加密的非对称加密（其实用的也就是RSA加密）非常复杂，运输效率极低。所以这里的RSA加密只是用于身份验证，而后续加密步骤都是通过三个随机数来确认的一种更高效的对称加密算法。</p>]]></content>
+    
+    
+    <summary type="html">简单介绍HTTP和HTTPS的区别</summary>
+    
+    
+    
+    <category term="计算机" scheme="https://www.markyin.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+    <category term="HTTP/HTTPS" scheme="https://www.markyin.cn/tags/HTTP-HTTPS/"/>
+    
+  </entry>
   
   <entry>
     <title>IntelliJ IDEA三种注释方法</title>
@@ -38,11 +59,11 @@
   </entry>
   
   <entry>
-    <title>如何让没有WWW的网站跳转到带有WWWW的网站</title>
+    <title>如何让没有WWW的网站跳转到带有WWW的网站</title>
     <link href="https://www.markyin.cn/article/1b18f8fb.html"/>
     <id>https://www.markyin.cn/article/1b18f8fb.html</id>
     <published>2022-04-30T08:36:16.823Z</published>
-    <updated>2022-05-01T05:06:02.013Z</updated>
+    <updated>2022-05-14T02:48:12.892Z</updated>
     
     <content type="html"><![CDATA[<h2 id="如何让没有www的网站跳转到带www的网站"><a href="#如何让没有www的网站跳转到带www的网站" class="headerlink" title="如何让没有www的网站跳转到带www的网站"></a>如何让没有www的网站跳转到带www的网站</h2><h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><p>&amp;emsp;&amp;emsp;现在越来越多的网站没有www开头了。但是我们经常想让我们的网站在浏览器中在没有www开头的时候自动跳转到www开头的主站，例如让我的网站（注：由于笔者没有用服务器，用的是又拍云得CDN来加速网站，并且SSL证书是在又拍云上添加的，所以笔者没有进行跳转设置，因为如果这样设置子域名markyin.cn就无法添加SSL证书进行HTTPS协议）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://markyin.cn</span><br></pre></td></tr></table></figure><p>自动跳转到主站</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.markyin.cn</span><br></pre></td></tr></table></figure><p>笔者在这里总结了两种方法，分别针对没有备案的域名和备案的域名。</p><h3 id="二、前提"><a href="#二、前提" class="headerlink" title="二、前提"></a>二、前提</h3><p>首先登录我们的阿里云&#x2F;腾讯云&#x2F;不管什么云，我们必须要有一个主机记录值为www（别的也行）的域名解析。</p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204301618941.png" alt="主机记录值为www"></p><h3 id="三、添加记录"><a href="#三、添加记录" class="headerlink" title="三、添加记录"></a>三、添加记录</h3><h4 id="1-法一：CNAME法（域名没有备案）"><a href="#1-法一：CNAME法（域名没有备案）" class="headerlink" title="1. 法一：CNAME法（域名没有备案）"></a>1. 法一：CNAME法（域名没有备案）</h4><p>添加一条CNAME记录类型，主机记录为@，记录值指向你带有www的网站，比如我就指向<a href="http://www.markyin.cn.下面以我的为例./">www.markyin.cn。下面以我的为例。</a></p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204301624008.png" alt="添加CNAME记录"></p><h4 id="2-法二：301重定位（域名备案了）"><a href="#2-法二：301重定位（域名备案了）" class="headerlink" title="2. 法二：301重定位（域名备案了）"></a>2. 法二：301重定位（域名备案了）</h4><p>因为如果域名没有备案就不能使用URL记录类型，所以该方法只适用于备案之后的网站。这里将记录类型换为显性URL，主机记录还是为@，记录值301+你的带www的网址（还需要带http&#x2F;https协议前缀），例如我的：<a href="https://markyin.cn.下面以我的为例./">https://markyin.cn。下面以我的为例。</a></p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204301629985.png" alt="301重定位"></p><h3 id="四、最终效果"><a href="#四、最终效果" class="headerlink" title="四、最终效果"></a>四、最终效果</h3><p>当我们在网站中输入不带www的域名的时候，浏览器就会自动跳转</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204301630382.png" alt="不带www域名"  /><p>到我们带www的域名主站</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204301632786.png" alt="带www的域名" style="zoom: 67%;" />]]></content>
     

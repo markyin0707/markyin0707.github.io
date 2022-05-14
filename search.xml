@@ -334,7 +334,7 @@
 <li>客户端发送预主密钥（经过公钥加密后的第三个随机数）、Change Ciper Spec（往后的数据通过商量好的算法加密）、Encrypted Hadshake Message（TLS协商没有问题，加密开始）</li>
 <li>服务端发送Encrypted Hadshake Message</li>
 </ol>
-<p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202205141156250.png" alt="image-20220514115623699"></p>
+<p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202205141156250.png" alt="TSL握手"></p>
 <p><a href="https://www.bilibili.com/video/BV1KY411x7Jp">图片来源于技术蛋老师</a></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">总而言之产生的三个随机数最终可以获得一个会话密钥，即后续用到的对称加密方法。</span><br></pre></td></tr></table></figure>
 
@@ -345,6 +345,36 @@
       </categories>
       <tags>
         <tag>HTTP/HTTPS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hash算法原理</title>
+    <url>/article/ec72a45b.html</url>
+    <content><![CDATA[<h2 id="Hash算法"><a href="#Hash算法" class="headerlink" title="Hash算法"></a>Hash算法</h2><h3 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h3><p>Hash译为把…弄糟（乱）。哈希函数又被称为散列函数、杂凑函数。是把任意长度的输入（又叫做预映射pre-image）通过散列算法变换成固定长度的输出，该输出就是散列值。这种转换是一种压缩映射，也就是，散列值的空间通常远小于输入的空间。不同的输入可能会散列成相同的输出，也就是哈希碰撞。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">简单说就是：</span><br><span class="line">1.Hash是只能加密，不能解密的算法。如果需要解密只能使用枚举法，不断地试输入的参数</span><br><span class="line">2.输入一个数，哈希函数可以把它变为长度相等的整数（通常为16进制）</span><br><span class="line">3.不同参数-&gt;不同的整数</span><br><span class="line">4.同样的参数-&gt;同样的整数</span><br><span class="line">5.不同的参数算出的整数有概率相等，称为哈希碰撞</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、哈希函数的实现"><a href="#二、哈希函数的实现" class="headerlink" title="二、哈希函数的实现"></a>二、哈希函数的实现</h3><p>这里以一种简单的实现方法：平方取中法</p>
+<ol>
+<li>传入一个字符参数，把该字符参数转换为Unicode序号</li>
+<li>把这个序号平方</li>
+<li>再取平方中的2~7这四位数，得到值</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test4</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String a = <span class="string">&quot;abc&quot;</span>;</span><br><span class="line">        <span class="comment">//Unicode加上一位6位数，然后进行平方</span></span><br><span class="line">        <span class="keyword">double</span> b=Math.pow(Double.parseDouble(StringUnicode(a))+<span class="number">123456</span>,<span class="number">2</span>);</span><br><span class="line">        <span class="comment">//把科学计数法转换为普通计数法</span></span><br><span class="line">        BigDecimal bd = <span class="keyword">new</span> BigDecimal(b);</span><br><span class="line">        String c = bd.toPlainString();</span><br><span class="line">        <span class="comment">//截取最后的字符串2~7的数字</span></span><br><span class="line">        System.out.println(c.substring(<span class="number">2</span>,<span class="number">6</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把String转换为Unicode</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> string</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> unicode of string</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">StringUnicode</span><span class="params">(String string)</span> </span>&#123;</span><br><span class="line">        StringBuffer unicode = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; string.length(); i++) &#123;</span><br><span class="line">            <span class="comment">// 取出每一个字符</span></span><br><span class="line">            <span class="keyword">char</span> c = string.charAt(i);</span><br><span class="line">            <span class="comment">// 转换为unicode</span></span><br><span class="line">            unicode.append(Integer.toHexString(c));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> unicode.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里终端得到的值为</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&quot;C:\Program Files\Java\jdk1.8.0_301\bin\java.exe&quot; ...</span><br><span class="line">7184</span><br><span class="line"></span><br><span class="line">Process finished with exit code 0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>即更换不同的字符串a，可以输出一个毫无规律的4位数字。而且通过这个四位数无法逆向推到出字符串a。这就是一个简单的哈希算法。</p>
+<h3 id="三、常用的几个Hash函数"><a href="#三、常用的几个Hash函数" class="headerlink" title="三、常用的几个Hash函数"></a>三、常用的几个Hash函数</h3><p>通过增加Hash函数的输出长度，可以减少Hash碰撞的概率。常用的Hash函数有MD4，MD5，SHA-0，SHA-1，SHA-1。现在大部分加密采用的都是SHA-2，其中比特币的数字签名加密算法的就是SHA-256。</p>
+<p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202205141648009.png" alt="常用的几个Hash函数"></p>
+<h3 id="四、Hash函数的应用"><a href="#四、Hash函数的应用" class="headerlink" title="四、Hash函数的应用"></a>四、Hash函数的应用</h3><p>现在Hash函数基本上是无处不在如平时用到的用户密码、密钥等加密。甚至这几年非常火爆的区块链BTC比特币也是运用SHA-256算法来进行加密防止它人恶意篡改数字签名。</p>
+<p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202205141656881.png" alt="BTC中Hash函数的应用"></p>
+]]></content>
+      <categories>
+        <category>计算机</category>
+      </categories>
+      <tags>
+        <tag>Hash</tag>
       </tags>
   </entry>
 </search>

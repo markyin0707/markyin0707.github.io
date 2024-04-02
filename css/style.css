@@ -1,0 +1,155 @@
+/* 
+连接主题里的injiect里的head通过css自定义博客样式
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+h1#site-title {
+    font-family: 'Zhi Mang Xing', cursive;
+} */
+
+@font-face {
+  font-family: 'ZhuZiAYuanJWD';
+  src: url('/fonts/ZhuZiAYuanJWD.ttf');
+}
+@font-face{
+  font-family:'Cartoon' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Cartoon.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+@font-face{
+  font-family:'Circle' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Circle.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+@font-face{
+  font-family:'Soft' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Soft.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+/* 标题Mark Blog字体 */
+h1#site-title {
+  font-family: 'Soft', sans-serif;
+}
+
+/* 网站底部透明 */
+#footer{
+    background-color: transparent;
+}
+
+/* 右侧滚动条滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3B7C9C;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+  }
+
+  /* 鼠标样式 */
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur),
+      default;
+  }
+  a,
+  img {
+    cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
+      default;
+  }
+
+/* 
+全局透明
+*/
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item{
+  background:rgba(255, 255, 255, 0.7);
+}
+/* 首页侧栏卡片 */
+.card-widget{
+background:rgba(255, 255, 255, 0.7)!important;
+}
+/* 文章页面正文背景 */  /* 文章的透明度 */
+div#post{
+background: rgba(255, 255, 255, 0.8); 
+}
+/* 分页页面 */
+div#page{
+background: rgba(255, 255, 255, 0.7);
+}
+/* 归档页面 */
+div#archive{
+background: rgba(255, 255, 255, 0.7);
+}
+/* 标签页面 */
+div#tag{
+background: rgba(255, 255, 255, 0.7);
+}
+/* 分类页面 */
+div#category{
+background: rgba(255, 255, 255, 0.7);
+}
+
+/*标题栏毛玻璃*/
+#page-header.nav-visible #nav {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(50px);
+}
+
+/*搜索框毛玻璃*/
+.search-dialog {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+}
+
+#search-mask {
+    background: rgba(255,255,255,0);
+}
+
+/*手机端毛玻璃优化*/
+#sidebar #sidebar-menus.open {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+}
+
+#sidebar #menu-mask {
+    background: rgba(255,255,255,0);
+}
+
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+
+/* 头图遮罩层透明 */
+#page-header::before{
+  background: transparent!important;
+}
+
+

@@ -6,7 +6,7 @@
   <link href="https://www.markyin.cn/atom.xml" rel="self"/>
   
   <link href="https://www.markyin.cn/"/>
-  <updated>2024-04-02T14:12:42.194Z</updated>
+  <updated>2024-04-03T05:46:36.691Z</updated>
   <id>https://www.markyin.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习计算机专业书籍的方法</title>
+    <link href="https://www.markyin.cn/article/2684df30"/>
+    <id>https://www.markyin.cn/article/2684df30</id>
+    <published>2024-04-03T05:16:13.487Z</published>
+    <updated>2024-04-03T05:46:36.691Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="学习计算机专业书籍的方法"><a href="#学习计算机专业书籍的方法" class="headerlink" title="学习计算机专业书籍的方法"></a>学习计算机专业书籍的方法</h2><h4 id="一-Preface"><a href="#一-Preface" class="headerlink" title="一, Preface"></a>一, Preface</h4><p>在计算机科学的学习过程中，专业书籍是不可或缺的资源。有效地学习这些书籍不仅能够帮助我们掌握理论知识，还能够提升我们解决实际问题的能力。本文将从几个方面来探讨如何高效学习计算机专业书籍。</p><h4 id="二-多次阅读"><a href="#二-多次阅读" class="headerlink" title="二, 多次阅读"></a>二, 多次阅读</h4><p>多次阅读专业书籍是一个深化理解和巩固知识的有效方法。每一次阅读都可能带来新的发现和理解，因为随着学习的深入和经验的积累，我们能够从不同的角度和层次理解书中的内容。此外，重复阅读有助于记忆中的长期保持，尤其是对于那些复杂的概念和理论。它也可以帮助我们建立起更加完整的知识体系，使我们能够将书中的知识更好地应用于实践中，提高解决问题的能力。总之，多次阅读专业书籍是提升专业技能和学术水平的重要途径。</p><h4 id="三-由浅入深"><a href="#三-由浅入深" class="headerlink" title="三,由浅入深"></a>三,由浅入深</h4><p>由浅入深地阅读专业书籍是一个高效的学习过程，它能够帮助我们更好地理解和掌握复杂的知识。在第一次阅读时，我们通过获取一个大纲来了解书籍的基本结构和主要概念，这相当于为我们的学习之旅绘制了一张地图。这样做可以帮助我们确定哪些部分是关键点，哪些可能需要更多的关注。</p><p>第二次阅读时，我们会深入到具体内容，开始理解每个部分的细节。这时，我们已经有了第一次阅读的背景知识，能够更容易地吸收和理解复杂的信息。这个阶段，我们开始将知识点联系起来，形成更加完整的理解。</p><p>到了第三次阅读，我们的目标是深入了解。这时，我们不仅仅是在回顾已经学过的内容，更是在寻找深层次的联系和理解。我们可能会开始思考这些知识如何与我们已知的信息相结合，或者如何应用于实际问题。这个阶段，我们的理解会变得更加深刻，记忆也会更加牢固。</p><p>总的来说，由浅入深的阅读可以帮助我们建立起坚实的知识基础，逐步提高我们的理解和应用能力。这种方法让我们能够有效地处理大量信息，同时确保我们不会在学习过程中迷失方向。它是一种适应人类学习习惯的有效策略，能够帮助我们在知识的海洋中更加自如地航行。</p><h4 id="四-举例"><a href="#四-举例" class="headerlink" title="四,举例"></a>四,举例</h4><p><a href="https://www.bilibili.com/video/BV1gG411f7zX/?vd_source=c1d41c8c07ab515a5b4a2407543a7445">这里我们可以看一看周志华老师讲解机器学习的第一课, 教我们如何读这本书。我觉得读任何专业课书都应该这样, 由浅入深的多次阅读。</a></p><h4 id="五-其他"><a href="#五-其他" class="headerlink" title="五,其他"></a>五,其他</h4><p>如果大家还有什么补充, 欢迎评论区留言。</p>]]></content>
+    
+    
+    <summary type="html">在学习计算机课程中,看懂专业书籍也蕴含着一层学问</summary>
+    
+    
+    
+    <category term="计算机" scheme="https://www.markyin.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+    <category term="学习" scheme="https://www.markyin.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="书籍" scheme="https://www.markyin.cn/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>VMnet0和VMnet1和VMnet8的区别</title>
@@ -42,9 +65,9 @@
     <link href="https://www.markyin.cn/article/a034bca7"/>
     <id>https://www.markyin.cn/article/a034bca7</id>
     <published>2024-04-02T12:23:39.482Z</published>
-    <updated>2024-04-02T14:06:15.222Z</updated>
+    <updated>2024-04-03T05:16:29.890Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="最经典的非对称加密算法RSA"><a href="#最经典的非对称加密算法RSA" class="headerlink" title="最经典的非对称加密算法RSA"></a>最经典的非对称加密算法RSA</h2><h4 id="一-Preface"><a href="#一-Preface" class="headerlink" title="一, Preface"></a>一, Preface</h4><p>​RSA加密算法是一种最经典的非对称加密算法。RSA是由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）在1977年一起提出的。当时他们三人都在麻省理工学院工作。RSA就是他们三人姓氏开头字母拼在一起组成的。</p><h4 id="二-原理和实现"><a href="#二-原理和实现" class="headerlink" title="二, 原理和实现"></a>二, 原理和实现</h4><p>​这里不讲复杂的数学公式, 这里只简单的介绍RSA是什么以及大概的工作原理。RSA作为做经典的非对称加密算法,有公钥文件pem文件和私钥文件key文件组成。公钥交给外界加密, 私钥用来给自己解密文件。</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202404022124402.jpg" alt="非对称加密" style="zoom:50%;" /><h4 id="三-具体应用"><a href="#三-具体应用" class="headerlink" title="三,具体应用"></a>三,具体应用</h4><p>​RSA在很多方面都应用广泛。在Github上我们上传项目时候使用的SSH, 就会使用到RSA加密, 在本地生成RSA私钥和公钥, 再把公钥复制到GitHub上, 便可建立SSH连结。同理我们在本地通过SSH连接远程服务器也是一样的道理。甚至再SSL证书中也有应用, 当我们购买了SSL证书之后, 经过了域名验证, 我们还必须同时上穿私钥key文件和公钥pem文件给服务商。等等等等, 在很多方面RSA都有广泛的应用。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="最经典的非对称加密算法RSA"><a href="#最经典的非对称加密算法RSA" class="headerlink" title="最经典的非对称加密算法RSA"></a>最经典的非对称加密算法RSA</h2><h4 id="一-Preface"><a href="#一-Preface" class="headerlink" title="一, Preface"></a>一, Preface</h4><p>RSA加密算法是一种最经典的非对称加密算法。RSA是由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）在1977年一起提出的。当时他们三人都在麻省理工学院工作。RSA就是他们三人姓氏开头字母拼在一起组成的。</p><h4 id="二-原理和实现"><a href="#二-原理和实现" class="headerlink" title="二, 原理和实现"></a>二, 原理和实现</h4><p>这里不讲复杂的数学公式, 这里只简单的介绍RSA是什么以及大概的工作原理。RSA作为做经典的非对称加密算法,有公钥(如pem文件)和私钥(如key文件)组成。大部分情况下公钥交给外界加密, 私钥用来给自己解密文件。也有一些情况反过来, 通过私钥进行加密, 通过公钥来进行解密。</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202404022124402.jpg" alt="非对称加密" style="zoom:50%;" /><h4 id="三-具体应用"><a href="#三-具体应用" class="headerlink" title="三,具体应用"></a>三,具体应用</h4><p>RSA在很多方面都应用广泛。作为一种非对称加密技术，它在保障网络通信安全、数据加密存储、数字签名等领域发挥着重要作用。</p><ol><li>在Github上我们上传项目时候使用的SSH, 就会使用到RSA加密, 在本地生成RSA私钥和公钥, 再把公钥复制到GitHub上, 便可建立SSH连结。同理我们在本地通过SSH连接远程服务器也是一样的道理。</li><li>在SSL证书中也有应用, 当我们购买了SSL证书之后, 经过了域名验证, 我们还必须同时上穿私钥key文件和公钥pem文件给服务商。等等等等, 在很多方面RSA都有广泛的应用。</li><li>在HTTPS和SSH数据传输时, 通过持有的非对称加密的公钥和私钥进行一系列的加密, 最终形成一个对称加密的会话密钥来进行通信。</li></ol>]]></content>
     
     
     <summary type="html">程序员必须了解的最常用见,最经典的RSA算法。</summary>
@@ -184,7 +207,7 @@
     <link href="https://www.markyin.cn/article/dbe42a5b"/>
     <id>https://www.markyin.cn/article/dbe42a5b</id>
     <published>2023-04-10T17:37:35.567Z</published>
-    <updated>2024-04-02T14:05:33.314Z</updated>
+    <updated>2024-04-03T05:38:31.767Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一-前言"><a href="#一-前言" class="headerlink" title="一.前言"></a>一.前言</h3><p>​本站会保持不定时更新，喜欢的朋友可以收藏此站，因为这类网站有的会受到DDOS攻击然后不再运营，有的时常更换域名，所以笔者在此收集了几个网站给大家备用观看。</p><p>&amp;emsp;&amp;emsp;本站只为了分享给学生党们，闲暇时间看追一下喜欢的电影和电视剧，没有盈利目的。如果涉及到侵权或者，损害了它人利益，请联系博主。</p><hr><h3 id="二-网站链接"><a href="#二-网站链接" class="headerlink" title="二.网站链接"></a>二.网站链接</h3><p>​笔者在此也不过多废话先直接给出所有网站的链接, 有一些网站需要访问外网, 所以请自行尝试。(由于很多网站不盈利, 已经失效, 所以建议大家用导航网站)</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1.茶杯狐：https://www.cupfox.com/</span><br><span class="line">2.剧嗨影院：https://www.juhi.cc/</span><br><span class="line">3.欧乐影院：https://www.olevod.com/</span><br><span class="line">4.牛视网TV：https://www.chaojidianshi.net/</span><br><span class="line">5.捷华影视：https://www.jiehua.tv/</span><br><span class="line">6.视觉影视：http://shijueyy.com/</span><br><span class="line">7.555电影：https://www.o8tv.com/</span><br><span class="line">8.帝国影院：http://www.tv2828.com/</span><br><span class="line">9.天猫影院：http://www.tmaotv.com/</span><br><span class="line">10.火星2048：http://www.hx2048.com/</span><br><span class="line">11.4K影院-IU极客影院：https://www.i8k.cc/</span><br><span class="line">12.奈菲影视：https://www.nfmovies.com/</span><br><span class="line">13.哔嘀影视：https://www.mp4er.com/</span><br><span class="line">14.极品影视：https://www.jpysvip.net/</span><br><span class="line">15.白熊影院：https://www.woobm.cn/</span><br><span class="line">16.新VIP影院：http://www.xvipyy.com/mov/</span><br><span class="line">17.66影视：http://www.d66ys.com/</span><br><span class="line">18.木瓜电影网：https://www.14tv.cc/</span><br><span class="line">19.新影视影院：https://www.qzcyqp.com/</span><br><span class="line">20.电影天堂：https://www.dygod.net/</span><br></pre></td></tr></table></figure><hr><h3 id="三-导航网站"><a href="#三-导航网站" class="headerlink" title="三.导航网站"></a>三.导航网站</h3><p>&amp;emsp;&amp;emsp;因为很多免费的电影网站, 用着用着就会失效, 笔者建议大家可以收藏一个导航网站, 这样大家就可以随时都有免费的电影网站了。这里, 我列举一些导航网站。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.吾爱导航: https://www.gxfcseo.com</span><br><span class="line">2.小众技术工具库: https://www.xiaozhongjishu.com</span><br><span class="line">3.极光导航: https://www.jigdh.com</span><br><span class="line">4.好狗导航: https://www.howgo.cc</span><br><span class="line">5.可乐影视: https://klyingshi.com</span><br><span class="line">6.快导导航网: https://www.hifast.cn</span><br></pre></td></tr></table></figure><p>例如吾爱导航的影视资源: </p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202404021837949.png" alt="吾爱导航"></p><hr><p>（原创，转发请注明出处）</p>]]></content>
     
@@ -193,7 +216,7 @@
     
     
     
-    <category term="电影" scheme="https://www.markyin.cn/categories/%E7%94%B5%E5%BD%B1/"/>
+    <category term="其他" scheme="https://www.markyin.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
     <category term="电影" scheme="https://www.markyin.cn/tags/%E7%94%B5%E5%BD%B1/"/>
@@ -230,16 +253,16 @@
     <link href="https://www.markyin.cn/article/79375adb"/>
     <id>https://www.markyin.cn/article/79375adb</id>
     <published>2023-04-10T17:37:35.559Z</published>
-    <updated>2024-04-02T14:11:57.914Z</updated>
+    <updated>2024-04-03T05:38:45.297Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Typora开始收费了，教你如何白嫖"><a href="#Typora开始收费了，教你如何白嫖" class="headerlink" title="Typora开始收费了，教你如何白嫖"></a>Typora开始收费了，教你如何白嫖</h2><h3 id="一、为什么选择Typora"><a href="#一、为什么选择Typora" class="headerlink" title="一、为什么选择Typora"></a>一、为什么选择Typora</h3><p>​如果说typora是第二好用的markdown文本编辑器，那么应该没有谁敢说自己是第一好用的文本编辑器了。typora简洁的外观，丰富的功能实在让人难以割舍，但是作为学生党的我们囊中羞涩啊。还记得曾经那个免费的typora是多么的平易近人，现在居然需要14.99美刀、89元，而且并不能终身买断，只能买断一个大版本，当笔者得到这一消息的时候悲痛欲绝。</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444495.png" alt="Typora收费界面" style="zoom:50%;" /><h3 id="二、下载文件"><a href="#二、下载文件" class="headerlink" title="二、下载文件"></a>二、下载文件</h3><ol><li><p>进入<a href="https://github.com/markyin0707/typora-activation">我的github仓库</a></p></li><li><p>点机release</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444860.png" alt="我的github仓库界面" style="zoom:80%;" /></li><li><p>随便下载一个解压</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444633.png" alt="Typora1.2.5版本" style="zoom:67%;" /></li></ol><h3 id="三、激活步骤"><a href="#三、激活步骤" class="headerlink" title="三、激活步骤"></a>三、激活步骤</h3><ol><li><p>先安装 typora-setup-x64-1.2.3.exe ，记下安装路径</p></li><li><p>将 app.asar 替换到安装路径下的resources文件夹，替换掉app.asar文件</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281445089.png" alt="文件路径" style="zoom:80%;" /></li><li><p>重启typora</p></li><li><p>进入typora点击激活，输入邮箱、注册码</p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281445775.png" alt="激活Typora"></p></li><li><p>成功激活</p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281443065.png" alt="激活成功"></p></li></ol><h3 id="三、填写邮箱密码和授权码"><a href="#三、填写邮箱密码和授权码" class="headerlink" title="三、填写邮箱密码和授权码"></a>三、填写邮箱密码和授权码</h3><p>邮箱：<a href="mailto:&#x67;&#x61;&#104;&#105;&#106;&#112;&#98;&#x6a;&#x61;&#115;&#102;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#x67;&#x61;&#104;&#105;&#106;&#112;&#98;&#x6a;&#x61;&#115;&#102;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a><br>密码：<a href="mailto:&#103;&#x61;&#x68;&#x69;&#106;&#112;&#x62;&#x6a;&#97;&#x73;&#x66;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x61;&#x68;&#x69;&#106;&#112;&#x62;&#x6a;&#97;&#x73;&#x66;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a><br>(邮箱密码密钥其实可以随便填写，这里只是演示)</p><p>授权码: E8Q9Y5-KXMTL5-7578SL-4S5XKS</p><h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><p>请下载对应版本文件，尽量不要更新typora，毕竟typora更新变化不大，老版本功能和新版本基本上没有很大的差距。不能保证后续版本该方法任然有效。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Typora开始收费了，教你如何白嫖"><a href="#Typora开始收费了，教你如何白嫖" class="headerlink" title="Typora开始收费了，教你如何白嫖"></a>Typora开始收费了，教你如何白嫖</h2><h3 id="一、为什么选择Typora"><a href="#一、为什么选择Typora" class="headerlink" title="一、为什么选择Typora"></a>一、为什么选择Typora</h3><p>​如果说typora是第二好用的markdown文本编辑器，那么应该没有谁敢说自己是第一好用的文本编辑器了。typora简洁的外观，丰富的功能实在让人难以割舍，但是作为学生党的我们囊中羞涩啊。还记得曾经那个免费的typora是多么的平易近人，现在居然需要14.99美刀、89元，而且并不能终身买断，只能买断一个大版本，当笔者得到这一消息的时候悲痛欲绝。</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444495.png" alt="Typora收费界面" style="zoom:50%;" /><h3 id="二、下载文件"><a href="#二、下载文件" class="headerlink" title="二、下载文件"></a>二、下载文件</h3><ol><li><p>进入<a href="https://github.com/markyin0707/typora-activation">我的github仓库</a></p></li><li><p>点机release</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444860.png" alt="我的github仓库界面" style="zoom:80%;" /></li><li><p>随便下载一个解压</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281444633.png" alt="Typora1.2.5版本" style="zoom:67%;" /></li></ol><h3 id="三、激活步骤"><a href="#三、激活步骤" class="headerlink" title="三、激活步骤"></a>三、激活步骤</h3><ol><li><p>先安装 typora-setup-x64-1.2.3.exe ，记下安装路径</p></li><li><p>将 app.asar 替换到安装路径下的resources文件夹，替换掉app.asar文件</p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281445089.png" alt="文件路径" style="zoom:80%;" /></li><li><p>重启typora</p></li><li><p>进入typora点击激活，输入邮箱、注册码</p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281445775.png" alt="激活Typora"></p></li><li><p>成功激活</p><p><img src="https://image-myself.oss-cn-shanghai.aliyuncs.com/img/202204281443065.png" alt="激活成功"></p></li></ol><h3 id="三、填写邮箱密码和授权码"><a href="#三、填写邮箱密码和授权码" class="headerlink" title="三、填写邮箱密码和授权码"></a>三、填写邮箱密码和授权码</h3><p>邮箱：<a href="mailto:&#x67;&#x61;&#104;&#x69;&#x6a;&#x70;&#x62;&#x6a;&#x61;&#x73;&#x66;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x67;&#x61;&#104;&#x69;&#x6a;&#x70;&#x62;&#x6a;&#x61;&#x73;&#x66;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a><br>密码：<a href="mailto:&#103;&#97;&#x68;&#x69;&#x6a;&#112;&#x62;&#106;&#x61;&#115;&#102;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#103;&#97;&#x68;&#x69;&#x6a;&#112;&#x62;&#106;&#x61;&#115;&#102;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a><br>(邮箱密码密钥其实可以随便填写，这里只是演示)</p><p>授权码: E8Q9Y5-KXMTL5-7578SL-4S5XKS</p><h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><p>请下载对应版本文件，尽量不要更新typora，毕竟typora更新变化不大，老版本功能和新版本基本上没有很大的差距。不能保证后续版本该方法任然有效。</p>]]></content>
     
     
     <summary type="html">还记得曾经那个免费的typora是多么的平易近人，现在居然需要14.99美刀、89元，而且并不能终身买断，只能买断一个大版本，当笔者得到这一消息的时候悲痛欲绝。在此笔者要以5分钟教大家如何激活Typora。</summary>
     
     
     
-    <category term="软件" scheme="https://www.markyin.cn/categories/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="计算机" scheme="https://www.markyin.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
     <category term="激活" scheme="https://www.markyin.cn/tags/%E6%BF%80%E6%B4%BB/"/>
